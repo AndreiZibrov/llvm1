@@ -100,13 +100,13 @@ if(SYCL_PI_UR_USE_FETCH_CONTENT)
   endfunction()
 
   set(UNIFIED_RUNTIME_REPO "https://github.com/oneapi-src/unified-runtime.git")
-  # commit 0cbacd8a0844acb64091ecbb0c7d6a7df1b6160e
-  # Merge: 022df8ac 2f121cd8
+  # commit 642e3437b8a0a3e702ac3d68513d7076e7618c94
+  # Merge: 342bdfff 199287b7
   # Author: Kenneth Benzie (Benie) <k.benzie@codeplay.com>
-  # Date:   Thu Jul 4 10:37:58 2024 +0100
-  #     Merge pull request #1212 from aarongreig/aaron/specMotivatedRefactors
-  #     Batch adapter changes: spec motivated refactors
-  set(UNIFIED_RUNTIME_TAG 0cbacd8a0844acb64091ecbb0c7d6a7df1b6160e)
+  # Date:   Thu Jul 11 10:37:50 2024 +0100
+  #     Merge pull request #1829 from callumfare/callum/bindless_workaround
+  #     Treat bindless images handle types as native handles
+  set(UNIFIED_RUNTIME_TAG 642e3437b8a0a3e702ac3d68513d7076e7618c94)
 
   fetch_adapter_source(level_zero
     ${UNIFIED_RUNTIME_REPO}
